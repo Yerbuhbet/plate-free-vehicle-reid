@@ -221,3 +221,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Datasets & raw media
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.zip
+*.tar.gz
+
+# Model weights & vector indices
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.index
+*.faiss
+
+# Credentials & local env
+kaggle.json
+.env
+.DS_Store
+
+!report/figures/*.png
+!report/figures/*.jpg
